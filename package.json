@@ -1,0 +1,26 @@
+{
+  "name": "interview-task-ee",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shpax/interview-task-ee.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shpax/interview-task-ee/issues"
+  },
+  "homepage": "https://github.com/shpax/interview-task-ee#readme",
+  "dependencies": {
+    "@types/jest": "^27.4.1",
+    "jest": "^27.5.1",
+    "ts-jest": "^27.1.3",
+    "typescript": "^4.6.2"
+  }
+}
