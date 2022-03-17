@@ -9,6 +9,15 @@ describe("EventEmitter test", () => {
     events = new EventEmitter();
   });
 
+  test("subscribe & fire error event", () => {
+    const errorSpy = jest.spyOn(console, 'error');
+    events.on("error-event", () => {
+      throw new Error('SOME_ERROR');
+    });
+    events.emit("error-event");
+    expect(errorSpy).toHaveBeenCalledWith('EVENT_EMITTER:INVOCATION_ERROR:error-event');
+  });
+
   test("subscribe & fire single event", () => {
     let listener1Response: string[] = [];
     let listener2Response: string[] = [];
